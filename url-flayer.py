@@ -13,7 +13,7 @@ import time
 # pip3 install aiohttp
 import aiohttp
 
-parser = argparse.ArgumentParser(description=('https://github.com/scott-be/url-flayer'),
+parser = argparse.ArgumentParser(description=('https://github.com/johnjhacking/URLFlayer'),
                                 usage=f'usage: {sys.argv[0]} [options] domains.txt')
 
 def print_banner():
