@@ -21,7 +21,7 @@ optional arguments:
   -p PATH, --path PATH
   -t TIMEOUT, --timeout TIMEOUT
 Required Arguments:
-  -df DOMAINFILE, --domainfile DOMAINFILE
+  FILE, feed it a URL list
   ```
 # Examples
 **Pull up the help menu**
@@ -30,22 +30,22 @@ python3 url-flayer.py -h
 ```
 **Checking all URLs in a file for the /login path**
 ```
-python3 url-flayer.py -df urls.txt -p /login 
+python3 url-flayer.py urls.txt -p /login 
 ```
 **Checking all URLs in a file for the /admin path and displaying 200 Response Codes only**
 ```
-python3 url-flayer.py -df urls.txt -p /admin --success
+python3 url-flayer.py urls.txt -p /admin --success
 ```
 **Checking all URLs in a file for a path and creating timeout rules**
 ```
-python3 url-flayer.py -df urls.txt -p /moodle/moodle/Gruntfile.js -t 5000
+python3 url-flayer.py urls.txt -p /moodle/moodle/Gruntfile.js -t 5000
 ```
 **Checking all URLs in a file for a path, suppressing errors, and outputing it into a file**
 ```
-python3 url-flayer.py -df urls.txt -p /admin/something --noerror > foo.txt
+python3 url-flayer.py urls.txt -p /admin/something --noerror > foo.txt
 ```
 **Real example**
 ```
-python3 url-flayer.py -df urls.txt -p /carbon/admin --success --noerror --pattern ADMIN > foo.txt
+python3 url-flayer.py urls.txt -p /carbon/admin --success --noerror --pattern ADMIN > foo.txt
 ```
 Hope you enjoy the tool! Happy hunting!
