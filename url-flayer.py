@@ -17,7 +17,6 @@ parser = argparse.ArgumentParser(description=('https://github.com/johnjhacking/U
                                 usage=f'usage: {sys.argv[0]} [options] domains.txt')
 
 def print_banner():
-    # TODO Fix
     banner = r'''
    |\                     /)
  /\_\\__               (_//
